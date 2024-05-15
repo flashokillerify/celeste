@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "AutoGPT-Forge"
+name = "Celeste-Forge"
 version = "0.1.0"
 description = ""
-authors = ["Craig Swift <craigswift13@gmail.com>"]
-license = "MIT"
+authors = ["Yash Rajput"]
+license = "GPL"
 readme = "README.md"
 packages = [{ include = "forge" }]
 
@@ -24,13 +24,8 @@ litellm = "^1.17.9"
 duckduckgo-search = "^5.0.0"
 selenium = "^4.13.0"
 bs4 = "^0.0.1"
-agbenchmark = { path = "../../benchmark", optional = true }
-# agbenchmark = {git = "https://github.com/Significant-Gravitas/AutoGPT.git", subdirectory = "benchmark", optional = true}
 webdriver-manager = "^4.0.1"
 google-cloud-storage = "^2.13.0"
-
-[tool.poetry.extras]
-benchmark = ["agbenchmark"]
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.12.0"
@@ -55,7 +50,7 @@ build-backend = "poetry.core.masonry.api"
 line-length = 88
 target-version = ['py310']
 include = '\.pyi?$'
-packages = ["autogpt"]
+packages = ["celestegpt"]
 extend-exclude = '(/dist|/.venv|/venv|/build|/agent|agbenchmark/challenges)/'
 
 [tool.isort]

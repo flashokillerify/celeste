@@ -1,30 +1,30 @@
 [tool.poetry]
-name = "agpt"
-version = "0.5.0"
+name = "celgpt"
+version = "0.0.1"
 authors = [
-  "Significant Gravitas <support@agpt.co>",
+  "Yash Rajput <yash.rajpt@proton.me> ",
 ]
 readme = "README.md"
 description = "An open-source attempt to make GPT-4 autonomous"
-homepage = "https://github.com/Significant-Gravitas/AutoGPT/tree/master/autogpts/autogpt"
+homepage = "https://github.com/flashokillerify/celeste/tree/master/celestegpts/celeste"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-packages = [{ include = "autogpt" }]
+packages = [{ include = "celestegpt" }]
 
 
 [tool.poetry.scripts]
-autogpt = "autogpt.app.cli:cli"
-serve = "autogpt.app.cli:serve"
+celestegpt = "celestegpt.app.cli:cli"
+serve = "celestgpt.app.cli:serve"
 
 
 [tool.poetry.dependencies]
 python = "^3.10"
 anthropic = "^0.25.1"
 # autogpt-forge = { path = "../forge" }
-autogpt-forge = {git = "https://github.com/Significant-Gravitas/AutoGPT.git", subdirectory = "autogpts/forge"}
+celestegpt-forge = {git = "https://github.com/flashokillerify/celeste", subdirectory = "celestegpts/forge"}
 beautifulsoup4 = "^4.12.2"
 boto3 = "^1.33.6"
 charset-normalizer = "^3.1.0"
@@ -69,14 +69,10 @@ webdriver-manager = "*"
 openapi-python-client = "^0.14.0"
 
 # Benchmarking
-agbenchmark = { path = "../../benchmark", optional = true }
-# agbenchmark = {git = "https://github.com/Significant-Gravitas/AutoGPT.git", subdirectory = "benchmark", optional = true}
 google-cloud-logging = "^3.8.0"
 google-cloud-storage = "^2.13.0"
 psycopg2-binary = "^2.9.9"
 
-[tool.poetry.extras]
-benchmark = ["agbenchmark"]
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
@@ -114,7 +110,7 @@ build-backend = "poetry.core.masonry.api"
 line-length = 88
 target-version = ['py310']
 include = '\.pyi?$'
-packages = ["autogpt"]
+packages = ["celestegpt"]
 extend-exclude = '.+/(dist|.venv|venv|build|data)/.+'
 
 
@@ -133,10 +129,6 @@ sections = [
     "FIRSTPARTY",
     "LOCALFOLDER"
 ]
-extend_skip = [
-    "agbenchmark_config/temp_folder/",
-    "data/",
-]
 
 
 [tool.mypy]
@@ -144,7 +136,7 @@ follow_imports = 'skip'
 check_untyped_defs = true
 disallow_untyped_calls = true
 files = [
-    'autogpt/**/*.py',
+    'celeste/**/*.py',
     'tests/**/*.py'
 ]
 
@@ -161,3 +153,4 @@ markers = [
     "requires_openai_api_key",
     "requires_huggingface_api_key"
 ]
+

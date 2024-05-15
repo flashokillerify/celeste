@@ -37,4 +37,5 @@ COPY . /app
 EXPOSE 8000
 
 # Run the application when the container launches
-CMD ["poetry", "run", "python", "autogpt/__main__.py"]
+CMD ["poetry", "run", "python", "celeste/__main__.py"]
+

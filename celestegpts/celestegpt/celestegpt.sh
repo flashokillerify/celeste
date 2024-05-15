@@ -23,7 +23,7 @@ if $PYTHON_CMD -c "import sys; sys.exit(sys.version_info < (3, 10))"; then
         echo "Finished installing packages! Starting AutoGPT..."
         echo
     fi
-    poetry run autogpt "$@"
+    poetry run celestegpt "$@"
 else
     echo "Python 3.10 or higher is required to run Auto GPT."
 fi

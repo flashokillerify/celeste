@@ -23,5 +23,5 @@ if errorlevel 1 (
     echo Finished installing packages! Starting AutoGPT...
     echo
 )
-poetry run autogpt %*
+poetry run celestegpt %*
 pause
