@@ -27,17 +27,29 @@ def setup():
     click.echo(
         click.style(
             """
-       d8888          888             .d8888b.  8888888b. 88888888888 
-      d88888          888            d88P  Y88b 888   Y88b    888     
-     d88P888          888            888    888 888    888    888     
-    d88P 888 888  888 888888 .d88b.  888        888   d88P    888     
-   d88P  888 888  888 888   d88""88b 888  88888 8888888P"     888     
-  d88P   888 888  888 888   888  888 888    888 888           888     
- d8888888888 Y88b 888 Y88b. Y88..88P Y88b  d88P 888           888     
-d88P     888  "Y88888  "Y888 "Y88P"   "Y8888P88 888           888     
-                                                                                                                                       
+                                                                                                                                            
+                                                                                                                                
+        CCCCCCCCCCCCC                   lllllll                                               tttt                              
+     CCC::::::::::::C                   l:::::l                                            ttt:::t                              
+   CC:::::::::::::::C                   l:::::l                                            t:::::t                              
+  C:::::CCCCCCCC::::C                   l:::::l                                            t:::::t                              
+ C:::::C       CCCCCC    eeeeeeeeeeee    l::::l     eeeeeeeeeeee        ssssssssss   ttttttt:::::ttttttt        eeeeeeeeeeee    
+C:::::C                ee::::::::::::ee  l::::l   ee::::::::::::ee    ss::::::::::s  t:::::::::::::::::t      ee::::::::::::ee  
+C:::::C               e::::::eeeee:::::eel::::l  e::::::eeeee:::::eess:::::::::::::s t:::::::::::::::::t     e::::::eeeee:::::ee
+C:::::C              e::::::e     e:::::el::::l e::::::e     e:::::es::::::ssss:::::stttttt:::::::tttttt    e::::::e     e:::::e
+C:::::C              e:::::::eeeee::::::el::::l e:::::::eeeee::::::e s:::::s  ssssss       t:::::t          e:::::::eeeee::::::e
+C:::::C              e:::::::::::::::::e l::::l e:::::::::::::::::e    s::::::s            t:::::t          e:::::::::::::::::e 
+C:::::C              e::::::eeeeeeeeeee  l::::l e::::::eeeeeeeeeee        s::::::s         t:::::t          e::::::eeeeeeeeeee  
+ C:::::C       CCCCCCe:::::::e           l::::l e:::::::e           ssssss   s:::::s       t:::::t    tttttte:::::::e           
+  C:::::CCCCCCCC::::Ce::::::::e         l::::::le::::::::e          s:::::ssss::::::s      t::::::tttt:::::te::::::::e          
+   CC:::::::::::::::C e::::::::eeeeeeee l::::::l e::::::::eeeeeeee  s::::::::::::::s       tt::::::::::::::t e::::::::eeeeeeee  
+     CCC::::::::::::C  ee:::::::::::::e l::::::l  ee:::::::::::::e   s:::::::::::ss          tt:::::::::::tt  ee:::::::::::::e  
+        CCCCCCCCCCCCC    eeeeeeeeeeeeee llllllll    eeeeeeeeeeeeee    sssssssssss              ttttttttttt      eeeeeeeeeeeeee  
+
+
+        
 """,
-            fg="green",
+            fg="pink",
         )
     )
 
